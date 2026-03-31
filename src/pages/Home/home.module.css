@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.home {
+  background-image: url('../../assets/images/hero.webp');
+  background-position: center;
+  background-size: cover;
+  min-height: 700px;
+  padding: 80px;
+  text-align: center;
+}
+
+.navcards {
+  background-color: #5a1d16;
+  gap: 10px;
+  padding: 20px 0 20px 0;
+}
+
+.navitem {
+  color: #f5e6d3;
+  display: grid;
+  grid-template: 'image image title title'
+    'image image info info';
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navitem img {
+  grid-area: image;
+  height: 300px;
+  object-fit: cover;
+  width: 300px;
+}
+
+.pageTitle {
+  font-size: 4rem;
+}
+
+.pageInfo {
+  font-size: 2rem;
+}
+
+.title {
+  font-family: "Cormorant Garamond", serif;
+  grid-area: title;
+}
+
+.info {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  grid-area: info;
+  letter-spacing: -0.5px;
+}
+
+.nonAlco {
+  background-color: #40140f;
+  color: #f5e6d3;
+  display: grid;
+  grid-template: 'title title image image '
+    'info info image image';
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nonAlco img {
+  grid-area: image;
+  height: 300px;
+  justify-self: end;
+  object-fit: cover;
+  width: 300px;
+}
+
+
+@media (max-width: 768px) {
+  .navcards {
+    display: block;
+  }
+
+  .nonAlco{
+    display: block;
+  }
+  
+  .navitem{
+    display: block;
+  }
+}

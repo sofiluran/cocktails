@@ -1,0 +1,13 @@
+.drinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nonAlcoholic {
+  background-image: url('../../assets/images/nonalcoholic.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 700px;
+  padding: 80px;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+Cocktails Website 
+
+kolla på video 
+fetch api 
+
+gör routes 
+
+-home
+-categories (antingen gindrinkar osv eller "classic drinks")
+-random
+-Non alcoholic
+-ev. ingredienser 
+
+en till - kanske about eller favourites 
+
+
+gör divarna till navlinks 
+ta bort mellanrum på categories länkar
+
+.env 
+
+
+
+gör en till categorysummary för att länka rätt 
+
+ta bort useeffect för att ge random drink först vid knapptryck.

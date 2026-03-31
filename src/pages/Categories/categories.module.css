@@ -1,0 +1,18 @@
+.category {
+  background-color: #5a1d16;
+  border-radius: 8px;
+  color: #f5e6d3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+.categoryPage {
+  background-image: url('../../assets/images/cocktail.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 700px;
+  padding: 80px;
+  text-align: center;
+}
