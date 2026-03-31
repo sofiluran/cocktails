@@ -2,9 +2,9 @@
   background-color: #5a1d16;
   border-radius: 8px;
   color: #f5e6d3;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
   padding: 20px;
 }
 

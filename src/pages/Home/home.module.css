@@ -20,7 +20,7 @@
   display: grid;
   grid-template: 'image image title title'
     'image image info info';
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   text-decoration: none;
 }
@@ -58,7 +58,7 @@
   display: grid;
   grid-template: 'title title image image '
     'info info image image';
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   text-decoration: none;
 }

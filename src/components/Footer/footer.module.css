@@ -1,3 +1,36 @@
 .footer {
-  padding: 20px;
+  border-top: 1px solid #f5e6d3;
+  display: grid;
+  grid-template:
+    "text . ."
+    "info . ."
+    " . copy socials";
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 300px;
+  padding: 40px;
+}
+
+.info {
+  font-size: 3rem;
+  grid-area: info;
+  justify-self: start;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.copyright {
+  align-self: end;
+  font-size: 2rem;
+  grid-area: copy;
+}
+
+.text {
+  font-size: 2rem;
+  grid-area: text;
+  justify-self: start;
+}
+
+.socials {
+  align-self: end;
+  grid-area: socials;
 }

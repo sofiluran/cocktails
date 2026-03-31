@@ -1,10 +1,14 @@
 .category {
   background-color: #5a1d16;
   border: 1px solid #f5e6d3;
-  border-radius: 8px;
+  border-radius: 20px;
   color: #f5e6d3;
-  display: flex;
-  min-width: 200px;
   padding: 20px;
   text-decoration: none;
+  text-align: center;
+}
+
+.category:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  border-color: #d4af37;
 }

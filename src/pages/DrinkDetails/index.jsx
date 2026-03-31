@@ -27,16 +27,22 @@ const DrinkDetails = () => {
     <>
       <div className={styles.drinkDetails}>
         {drink && drink.map((drink, index) =>
-          <div key={index}>
+          <div key={index} className={styles.drink}>
             <h1>{drink.strDrink}</h1>
-            <img src={drink.strDrinkThumb} height="100px" width="auto" />
-            {drink.strInstructions && <p>{drink.strInstructions}</p>}
-            {drink.strIngredient1 && <p>{drink.strIngredient1}</p>}
-            {drink.strIngredient2 && <p>{drink.strIngredient2}</p>}
-            {drink.strIngredient3 && <p>{drink.strIngredient3}</p>}
-            {drink.strIngredient4 && <p>{drink.strIngredient4}</p>}
-            {drink.strIngredient5 && <p>{drink.strIngredient5}</p>}
-            {drink.strIngredient6 && <p>{drink.strIngredient6}</p>}
+            <img src={drink.strDrinkThumb} height="300px" width="auto" />
+            {drink.strInstructions && <p className={styles.instructions}>{drink.strInstructions}</p>}
+
+            <div className={styles.ingredients}>
+              <h3>Ingredients:</h3>
+              <div>
+                {drink.strIngredient1 && <div>{drink.strIngredient1}</div>}
+                {drink.strIngredient2 && <div>{drink.strIngredient2}</div>}
+                {drink.strIngredient3 && <div>{drink.strIngredient3}</div>}
+                {drink.strIngredient4 && <div>{drink.strIngredient4}</div>}
+                {drink.strIngredient5 && <div>{drink.strIngredient5}</div>}
+                {drink.strIngredient6 && <div>{drink.strIngredient6}</div>}
+              </div>
+            </div>
           </div>
         )}
       </div>

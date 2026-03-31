@@ -6,15 +6,13 @@ import ShowCategory from '../ShowCategory'
 
 const CategoryDetails = () => {
   const [categoryDetails, setCategoryDetails] = useState(null)
-
-  const { categoryname, idDrink } = useParams()
+  const { categoryname } = useParams()
 
   const getCategoryDetails = async () => {
     try {
       const response = await fetch(`${import.meta.env.VITE_API_CATEGORIES_DETAILS_ENDPOINT}${categoryname}`)
       const data = await response.json()
       setCategoryDetails(data.drinks)
-      console.log(data.drinks)
 
     } catch (error) {
       console.log(error)
@@ -27,9 +25,10 @@ const CategoryDetails = () => {
 
   return (
     <>
-      <div>category Details</div>
       <Outlet />
-      {categoryDetails && categoryDetails.map((item, index) => <ShowCategory key={index} {...item} />)}
+      <div className={styles.wrapper}>
+        {categoryDetails && categoryDetails.map((item, index) => <ShowCategory key={index} {...item} />)}
+      </div>
 
     </>
 

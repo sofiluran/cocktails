@@ -19,23 +19,30 @@ const Random = () => {
   return (
     <>
       <div className={styles.randomPage}>Get a random drink!</div>
-      <button className={styles.button} onClick={getRandomDrink}>Click me to get a random drink</button>
+      <div className={styles.wrapper}>
+        <button className={styles.button} onClick={getRandomDrink}>Click me to get a random drink</button>
 
-      {randomDrink ?
-        <div className={styles.random}>
-          <h1>{randomDrink.strDrink}</h1>
-          <img className={styles.randomImage} src={randomDrink.strDrinkThumb} height="400px" width="auto" />
-          <p>{randomDrink.strIngredient1}</p>
-          <p>{randomDrink.strIngredient2}</p>
-          <p>{randomDrink.strIngredient3 && randomDrink.strIngredient3}</p>
-          <p>{randomDrink.strIngredient4 && randomDrink.strIngredient4}</p>
-          <p>{randomDrink.strIngredient5 && randomDrink.strIngredient5}</p>
-          <p>{randomDrink.strIngredient6 && randomDrink.strIngredient6}</p>
-          <p>{randomDrink.strIngredient7 && randomDrink.strIngredient7}</p>
-          <p>{randomDrink.strInstructions}</p>
-        </div>
-        : ""
-      }
+        {randomDrink ?
+          <div className={styles.random}>
+            <h1>{randomDrink.strDrink}</h1>
+            <img className={styles.randomImage} src={randomDrink.strDrinkThumb} height="400px" width="auto" />
+            <div className={styles.ingredients}>
+              <h3>Ingredients:</h3>
+              <div>
+                <div>{randomDrink.strIngredient1}</div>
+                <div>{randomDrink.strIngredient2}</div>
+                <div>{randomDrink.strIngredient3 && randomDrink.strIngredient3}</div>
+                <div>{randomDrink.strIngredient4 && randomDrink.strIngredient4}</div>
+                <div>{randomDrink.strIngredient5 && randomDrink.strIngredient5}</div>
+                <div>{randomDrink.strIngredient6 && randomDrink.strIngredient6}</div>
+                <div>{randomDrink.strIngredient7 && randomDrink.strIngredient7}</div>
+              </div>
+            </div>
+            <p className={styles.instructions}>{randomDrink.strInstructions}</p>
+          </div>
+          : ""
+        }
+      </div>
     </>
 
   )

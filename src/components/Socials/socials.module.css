@@ -1,6 +1,8 @@
 .socials {
+  align-self: end;
   display: flex;
   font-size: 1.3rem;
   gap: 20px;
   justify-content: flex-end;
+  grid-area: socials;
 }
