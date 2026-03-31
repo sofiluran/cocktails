@@ -7,22 +7,19 @@ import DrinkDetails from './pages/DrinkDetails'
 import CategoryDetails from './pages/Categories/CategoryDetails'
 import Random from './pages/Random'
 
-
 function App() {
-
-
   return (
     <>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/categories" element={<Categories />}>
+          <Route path="/" element={<Home pageTitle="The Drink Route" subtitle="Find Your Next Favorite Drink" info="Discover hundreds of recipes, from timeless classics to refreshing alcohol-free treats." />}></Route>
+          <Route path="/categories" element={<Categories pageTitle="See our categories" subtitle="Choose a category and see more drinks" />}>
             <Route path=":categoryname" element={<CategoryDetails />}>
               <Route path=":id" element={<DrinkDetails />}></Route>
             </Route>
           </Route>
-          <Route path="/random" element={<Random />}></Route>
-          <Route path="/nonalcoholic" element={<NonAlcoholic />}>
+          <Route path="/random" element={<Random pageTitle="Get a random drink!" />}></Route>
+          <Route path="/nonalcoholic" element={<NonAlcoholic pageTitle="Non Alcoholic Drinks" />}>
             <Route path=":id" element={<DrinkDetails />}></Route>
           </Route>
         </Route>

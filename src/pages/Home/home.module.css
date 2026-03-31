@@ -27,9 +27,9 @@
 
 .navitem img {
   grid-area: image;
-  height: 300px;
+  max-height: 300px;
   object-fit: cover;
-  width: 300px;
+  max-width: 400px;
 }
 
 .pageTitle {
@@ -65,23 +65,22 @@
 
 .nonAlco img {
   grid-area: image;
-  height: 300px;
+  max-height: 300px;
   justify-self: end;
   object-fit: cover;
-  width: 300px;
+  max-width: 400px;
 }
 
 
 @media (max-width: 768px) {
-  .navcards {
+
+  .navitem,
+  .nonAlco {
     display: block;
   }
 
-  .nonAlco{
-    display: block;
-  }
-  
-  .navitem{
-    display: block;
+  .navitem img,
+  .nonAlco img {
+    max-width: 300px;
   }
 }

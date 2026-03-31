@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './random.module.css'
 
-const Random = () => {
+const Random = ({pageTitle, subtitle}) => {
 
   const [randomDrink, setRandomDrink] = useState(null)
 
@@ -18,13 +18,13 @@ const Random = () => {
 
   return (
     <>
-      <div className={styles.randomPage}>Get a random drink!</div>
+      <h1 className={styles.randomPage}>{pageTitle}</h1>
       <div className={styles.wrapper}>
         <button className={styles.button} onClick={getRandomDrink}>Click me to get a random drink</button>
 
         {randomDrink ?
           <div className={styles.random}>
-            <h1>{randomDrink.strDrink}</h1>
+            <h2>{randomDrink.strDrink}</h2>
             <img className={styles.randomImage} src={randomDrink.strDrinkThumb} height="400px" width="auto" />
             <div className={styles.ingredients}>
               <h3>Ingredients:</h3>

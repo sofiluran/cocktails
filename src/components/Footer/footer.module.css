@@ -34,3 +34,10 @@
   align-self: end;
   grid-area: socials;
 }
+
+
+@media (max-width: 768px) {
+.footer {
+  display: block;
+}
+}

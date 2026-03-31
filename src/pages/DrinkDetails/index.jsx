@@ -1,9 +1,10 @@
 import styles from './drinkdetails.module.css'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 const DrinkDetails = () => {
   const [drink, setDrink] = useState(null)
+  const navigate = useNavigate()
 
   const { id } = useParams()
 
@@ -12,7 +13,6 @@ const DrinkDetails = () => {
       const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`)
       const data = await response.json()
       setDrink(data.drinks)
-      console.log(data.drinks)
 
     } catch (error) {
       console.log(error)
@@ -42,9 +42,11 @@ const DrinkDetails = () => {
                 {drink.strIngredient5 && <div>{drink.strIngredient5}</div>}
                 {drink.strIngredient6 && <div>{drink.strIngredient6}</div>}
               </div>
+            
             </div>
           </div>
         )}
+        <button onClick={() =>navigate(-1)}>Close</button>
       </div>
     </>
   )

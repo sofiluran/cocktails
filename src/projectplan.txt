@@ -1,26 +1,42 @@
 Cocktails Website 
 
-kolla på video 
-fetch api 
-
+hitta en API 
 gör routes 
 
 -home
--categories (antingen gindrinkar osv eller "classic drinks")
+-categories 
+  -välj kategori för att se innehåll
+      -välj drink för att se hela drinken
 -random
 -Non alcoholic
--ev. ingredienser 
+  -välj drink för att se hela drinken
 
-en till - kanske about eller favourites 
-
+layout: 
+-header
+  -nav
+-outlet 
+-footer
+  -socials
 
 gör divarna till navlinks 
-ta bort mellanrum på categories länkar
 
 .env 
 
-
+hitta bilder
+använd bakgrundsbilder på varje sida med css
+importera bilder från assets/images
 
 gör en till categorysummary för att länka rätt 
 
-ta bort useeffect för att ge random drink först vid knapptryck.
+ta bort useeffect för att ge random drink första vid knapptryck.
+
+använd grid till sidorna och footer 
+
+fixa routerna för de med mellanrum
+ta bort mellanrum på categories länkar
+
+...
+
+lägg till props så inget är hardcoded
+fonts!
+go back button *

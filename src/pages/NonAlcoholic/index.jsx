@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 import styles from './nonalcoholic.module.css'
 import DrinkSummary from '../../components/DrinkSummary'
 
-const NonAlcoholic = () => {
+const NonAlcoholic = ({pageTitle}) => {
 
   const [nonAlcoholic, setNonAlcoholic] = useState(null)
 
@@ -25,8 +25,8 @@ const NonAlcoholic = () => {
   return (
     <>
       <div className={styles.nonAlcoholic}>
-        Non Alcoholic Drinks
-        </div>
+        <h1>{pageTitle}</h1>
+      </div>
       <Outlet />
       {nonAlcoholic &&
         <div className={styles.drinks}>

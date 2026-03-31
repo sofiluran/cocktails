@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   gap: 40px;
+  padding-right: 20px;
 }
 
 .navItem {
@@ -24,10 +25,11 @@
   }
 
   .navbar.active {
-    background-color: #F5EDDC;
+    background-color: #40140f;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
     position: absolute;
     right: 10px;

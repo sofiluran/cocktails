@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import styles from './categories.module.css'
 import CategoryCard from './CategoryCard'
 
-const Categories = () => {
+const Categories = ({pageTitle, subtitle}) => {
   const [category, setCategory] = useState(null)
 
   const getCategory = async () => {
@@ -11,7 +11,6 @@ const Categories = () => {
       const response = await fetch(import.meta.env.VITE_API_CATEGORIES_ENDPOINT)
       const data = await response.json()
       setCategory(data.drinks)
-
     } catch (error) {
       console.log(error)
     }
@@ -24,10 +23,10 @@ const Categories = () => {
   return (
     <>
       <div className={styles.categoryPage}>
-        <h1>See our categories</h1>
-        <p>choose a category and see more drinks</p>
+        <h1>{pageTitle}</h1>
+        <p>{subtitle}</p>
       </div>
-       <Outlet />
+      <Outlet />
       {category &&
         <div className={styles.category}>
           {category.map((item, index) => <CategoryCard key={index} {...item} />)}
