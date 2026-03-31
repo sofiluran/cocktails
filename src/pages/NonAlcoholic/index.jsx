@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import styles from './nonalcoholic.module.css'
-import DrinkSummary from '../../components/DrinkSummary'
+import DrinkSummary from './DrinkSummary'
 
 const NonAlcoholic = ({pageTitle}) => {
 

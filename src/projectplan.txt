@@ -40,3 +40,5 @@ ta bort mellanrum på categories länkar
 lägg till props så inget är hardcoded
 fonts!
 go back button *
+
+kanske göra navlink i home till en component

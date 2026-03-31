@@ -34,22 +34,33 @@
 
 .pageTitle {
   font-size: 4rem;
+  text-shadow: 5px 1px black;
 }
 
 .pageInfo {
   font-size: 2rem;
+  text-shadow: 2px 1px black;
+}
+
+.text {
+  font-size: 1.5rem;
+  text-shadow: 2px 1px black;
 }
 
 .title {
   font-family: "Cormorant Garamond", serif;
+  font-size: 3.5rem;
   grid-area: title;
+  letter-spacing: -0.5px;
 }
 
 .info {
   font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
   font-weight: 300;
   grid-area: info;
   letter-spacing: -0.5px;
+  margin-top: 0;
 }
 
 .nonAlco {

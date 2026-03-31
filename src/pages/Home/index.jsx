@@ -10,7 +10,7 @@ const Home = ({pageTitle, subtitle, info}) => {
       <div className={styles.home}>
         <h2 className={styles.pageTitle}>{pageTitle}</h2>
         <p className={styles.pageInfo}>{subtitle}</p>
-        <p>{info}</p>
+        <p className={styles.text}>{info}</p>
       </div>
       <div className={styles.navcards}>
         <NavLink className={styles.navitem} to="/categories">

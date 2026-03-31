@@ -31,7 +31,6 @@ const DrinkDetails = () => {
             <h1>{drink.strDrink}</h1>
             <img src={drink.strDrinkThumb} height="300px" width="auto" />
             {drink.strInstructions && <p className={styles.instructions}>{drink.strInstructions}</p>}
-
             <div className={styles.ingredients}>
               <h3>Ingredients:</h3>
               <div>
@@ -42,7 +41,6 @@ const DrinkDetails = () => {
                 {drink.strIngredient5 && <div>{drink.strIngredient5}</div>}
                 {drink.strIngredient6 && <div>{drink.strIngredient6}</div>}
               </div>
-            
             </div>
           </div>
         )}
