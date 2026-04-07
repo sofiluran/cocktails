@@ -10,10 +10,11 @@ const CategoryDetails = () => {
 
   const getCategoryDetails = async () => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_CATEGORIES_DETAILS_ENDPOINT}${categoryname}`)
+      let apiName = categoryname.replaceAll("&", "/")
+
+      const response = await fetch(`${import.meta.env.VITE_API_CATEGORIES_DETAILS_ENDPOINT}${apiName}`)
       const data = await response.json()
       setCategoryDetails(data.drinks)
-
     } catch (error) {
       console.log(error)
     }
@@ -29,7 +30,6 @@ const CategoryDetails = () => {
       <div className={styles.wrapper}>
         {categoryDetails && categoryDetails.map((item, index) => <ShowCategory key={index} {...item} />)}
       </div>
-
     </>
 
   )
