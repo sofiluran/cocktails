@@ -18,29 +18,26 @@ layout:
 -footer
   -socials
 
-gör divarna till navlinks 
+gör divarna till navlinks *
 
-.env 
+.env *
 
-hitta bilder
-använd bakgrundsbilder på varje sida med css
-importera bilder från assets/images
+hitta bilder *
+använd bakgrundsbilder på varje sida med css *
+fixa utils med bilderna *
 
-gör en till categorysummary för att länka rätt 
+ta bort useeffect för att ge random drink första vid knapptryck. *
 
-ta bort useeffect för att ge random drink första vid knapptryck.
+använd grid till sidorna och footer *
 
-använd grid till sidorna och footer 
+fixa routerna för de med mellanrum *
 
-fixa routerna för de med mellanrum
-ta bort mellanrum på categories länkar
-
-...
-
-lägg till props så inget är hardcoded
+lägg till props så inget är hardcoded *
 fonts!
 go back button *
 
-kanske göra navlink i home till en component
+skapa en data.js med info om de olika kategorierna på home. *
 
-hard codad categories route funkar... 
+hard coded categories route funkar *
+
+mer text på home *
