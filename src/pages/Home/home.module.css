@@ -4,7 +4,7 @@
   background-image: url('../../assets/images/hero.webp');
   background-position: center;
   background-size: cover;
-  min-height: 700px;
+  min-height: 90vh;
   padding: 80px;
   text-align: center;
 }
@@ -33,6 +33,7 @@
 }
 
 .pageTitle {
+  font-family: "Cormorant Garamond", serif;
   font-size: 4rem;
   text-shadow: 5px 1px black;
 }
@@ -94,5 +95,9 @@
   .navitem img,
   .nonAlco img {
     max-width: 300px;
+  }
+
+  .title{
+    font-size: 3rem;
   }
 }

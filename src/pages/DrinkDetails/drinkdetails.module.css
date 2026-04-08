@@ -32,6 +32,7 @@
 }
 
 .instructions {
+  font-size: 1.5rem;
   grid-area: instructions;
   line-height: 1.6;
 }
@@ -40,6 +41,7 @@
   align-self: end;
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
   gap: 10px;
   grid-area: text;
 }
@@ -67,5 +69,15 @@
 
   .drink {
     display: block;
+  }
+
+  .ingredients .instructions {
+    font-size: 1rem;
+  }
+
+  .ingredients div {
+    display: block;
+    margin-bottom: 20px;
+
   }
 }
