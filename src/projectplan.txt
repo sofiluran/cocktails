@@ -36,7 +36,7 @@ använd grid till sidorna och footer *
 fixa routerna för de med mellanrum *
 
 lägg till props så inget är hardcoded *
-fonts!
+fonts! lägg till i index.css *
 go back button *
 
 skapa en data.js med info om de olika kategorierna på home. *
@@ -47,4 +47,6 @@ mer text på home *
 
 lägg ev till animationer och småfix 
 
-fixa font-size 
+fixa font-size *
+
+ladda upp i vercel *

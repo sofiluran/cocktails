@@ -14,7 +14,6 @@
     "image image instructions instructions";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
-
 }
 
 .drink h1 {
@@ -78,6 +77,5 @@
   .ingredients div {
     display: block;
     margin-bottom: 20px;
-
   }
 }

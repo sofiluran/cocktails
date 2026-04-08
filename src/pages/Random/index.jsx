@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import styles from './random.module.css'
 
-const Random = ({pageTitle, subtitle}) => {
-
+const Random = ({ pageTitle }) => {
   const [randomDrink, setRandomDrink] = useState(null)
 
   const getRandomDrink = async () => {
@@ -10,7 +9,6 @@ const Random = ({pageTitle, subtitle}) => {
       const response = await fetch(import.meta.env.VITE_API_RANDOM_ENDPOINT)
       const data = await response.json()
       setRandomDrink(data.drinks[0])
-
     } catch (error) {
       console.log(error)
     }
@@ -21,7 +19,6 @@ const Random = ({pageTitle, subtitle}) => {
       <h1 className={styles.randomPage}>{pageTitle}</h1>
       <div className={styles.wrapper}>
         <button className={styles.button} onClick={getRandomDrink}>Click me to get a random drink</button>
-
         {randomDrink ?
           <div className={styles.random}>
             <h2>{randomDrink.strDrink}</h2>
@@ -44,7 +41,6 @@ const Random = ({pageTitle, subtitle}) => {
         }
       </div>
     </>
-
   )
 }
 

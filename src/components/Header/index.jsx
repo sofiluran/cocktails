@@ -9,7 +9,6 @@ const Header = () => {
         <Logo />
         <Navbar />
       </div>
-
     </div>
   )
 }

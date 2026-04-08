@@ -36,9 +36,8 @@
   grid-area: socials;
 }
 
-
 @media (max-width: 768px) {
-.footer {
-  display: block;
-}
+  .footer {
+    display: block;
+  }
 }

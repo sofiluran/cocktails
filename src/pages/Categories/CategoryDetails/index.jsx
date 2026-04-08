@@ -31,7 +31,6 @@ const CategoryDetails = () => {
         {categoryDetails && categoryDetails.map((item, index) => <ShowCategory key={index} {...item} />)}
       </div>
     </>
-
   )
 }
 

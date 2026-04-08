@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom'
 import { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi"
 import { IoClose } from "react-icons/io5";
-
 import styles from './navbar.module.css'
 
 const Navbar = () => {

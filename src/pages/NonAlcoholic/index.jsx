@@ -3,8 +3,7 @@ import { Outlet } from 'react-router-dom'
 import styles from './nonalcoholic.module.css'
 import DrinkSummary from './DrinkSummary'
 
-const NonAlcoholic = ({pageTitle}) => {
-
+const NonAlcoholic = ({ pageTitle }) => {
   const [nonAlcoholic, setNonAlcoholic] = useState(null)
 
   const getNonAlcoholicDrinks = async () => {
@@ -12,7 +11,6 @@ const NonAlcoholic = ({pageTitle}) => {
       const response = await fetch(import.meta.env.VITE_API_NA_ENDPOINT)
       const data = await response.json()
       setNonAlcoholic(data.drinks)
-
     } catch (error) {
       console.log(error)
     }
