@@ -52,6 +52,7 @@
   font-size: 3.5rem;
   grid-area: title;
   letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
 
 .info {

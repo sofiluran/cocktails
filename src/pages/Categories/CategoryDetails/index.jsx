@@ -11,7 +11,6 @@ const CategoryDetails = () => {
   const getCategoryDetails = async () => {
     try {
       let apiName = categoryname.replaceAll("&", "/")
-
       const response = await fetch(`${import.meta.env.VITE_API_CATEGORIES_DETAILS_ENDPOINT}${apiName}`)
       const data = await response.json()
       setCategoryDetails(data.drinks)
@@ -27,6 +26,7 @@ const CategoryDetails = () => {
   return (
     <>
       <Outlet />
+      <h2 className={styles.categoryTitle}>{categoryname.replaceAll("_", " ")}</h2>
       <div className={styles.wrapper}>
         {categoryDetails && categoryDetails.map((item, index) => <ShowCategory key={index} {...item} />)}
       </div>

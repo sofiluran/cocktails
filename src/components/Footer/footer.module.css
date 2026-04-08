@@ -22,6 +22,7 @@
   align-self: end;
   font-size: 2rem;
   grid-area: copy;
+  justify-self: center;
 }
 
 .text {
